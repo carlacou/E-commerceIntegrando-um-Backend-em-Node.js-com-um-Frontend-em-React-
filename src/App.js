@@ -2,8 +2,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './components/store';
 import Routes from './routes';
-import { Container } from '@material-ui/core/';
+import { Container} from '@material-ui/core/';
 import Header from './components/Header';
+
+
 
 const App = () => {
   
@@ -17,7 +19,7 @@ const App = () => {
     <Provider store={store}>
       <Container maxWidth="xl">
         <Router>
-          <Header />
+          <Header/>
           <Routes />
         </Router>
       </Container> 
